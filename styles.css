@@ -1,0 +1,161 @@
+html{
+    height: 100%;
+}
+body{
+    
+    color: white;
+    background-color: #0d518d;
+    margin: auto;
+    padding: 0;
+    height:inherit;
+    overflow: hidden;
+    width: 100%;
+}
+#main{
+    font-size: 2vh;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+}
+#home{
+    width: 100%;
+    background-color: #03254c;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+#home div{
+    margin: auto;
+    display: grid;
+    height: 100%;
+    place-content: center;
+}
+#about{
+    width: 100%;
+    background-color: #1167b1;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+#about div{
+    margin: auto;
+    display: grid;
+    height: 100%;
+    place-content: center;
+}
+#skills{
+    width: 100%;
+    background-color: #187bcd;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+#grid{
+    margin: auto;
+    display: grid;
+    height: 100%;
+    place-content: center;
+    gap: 10px;
+}
+#skill{
+    margin: auto;
+    display: grid;
+    place-content: center;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    
+    text-align: center;
+}
+#skill img{
+    height: 250px;
+    width: 250px;
+}
+#contacts{
+    width: 100%;
+    background-color: #2097fa;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+}
+#contacts div{
+    display: grid;
+    place-content: center;
+    overflow: hidden;
+    text-align: center;
+    height: 100%;
+}
+#contacts img{
+    
+    height: 30px;
+    width: 30px;
+}
+.column {
+    padding: 20px;
+}
+
+@keyframes slide {
+    from { width: 50%;}
+    to {width:100%}
+}
+
+.column.active {
+    grid-column:span 2;
+    animation: slide 0.5s ease-in;
+}
+
+
+.column:not(.active){
+    grid-column:span 1;
+}
+.column:not(.active) #grid{
+    opacity: 0;
+}
+
+@media (max-width: 768px) {
+    #main{
+        font-size:x-small;
+        height: 100%;
+        display: grid;
+        grid-template-columns: repeat(8, 12.5%);
+    }
+    .column.active {
+        grid-column:span 5;
+        animation: slide 0.5s ease-in;
+    }
+    
+    
+    .column:not(.active){
+        grid-column:span 1;
+    }
+    .column:not(.active) #grid{
+        opacity: 0;
+    }
+    #skill img{
+        height: 120px;
+        width: 120px;
+    }
+}
+
+@media (max-width: 1350px) {
+    #main{
+        font-size:2vh;
+        height: 100%;
+        display: grid;
+        grid-template-columns: repeat(8, 12.5%);
+    }
+    .column.active {
+        grid-column:span 5;
+        animation: slide 0.5s ease-in;
+    }
+    
+    
+    .column:not(.active){
+        grid-column:span 1;
+    }
+    .column:not(.active) #grid{
+        opacity: 0;
+    }
+    #skill img{
+        height: 120px;
+        width: 120px;
+    }
+}
+
