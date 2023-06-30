@@ -111,7 +111,7 @@ body{
 
 @media (max-width: 768px) {
     #main{
-        font-size:x-small;
+        font-size:xx-small;
         height: 100%;
         display: grid;
         grid-template-columns: repeat(8, 12.5%);
