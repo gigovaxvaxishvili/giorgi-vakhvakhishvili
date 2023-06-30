@@ -101,6 +101,10 @@ body{
     animation: slide 0.5s ease-in;
 }
 
+button{
+    border-radius: 25px;
+}
+
 
 .column:not(.active){
     grid-column:span 1;
@@ -110,6 +114,8 @@ body{
 }
 
 @media (max-width: 768px) {
+
+    
     #main{
         font-size:xx-small;
         height: 100%;
@@ -135,6 +141,7 @@ body{
 }
 
 @media (max-width: 1350px) {
+
     #main{
         font-size:2vh;
         height: 100%;
